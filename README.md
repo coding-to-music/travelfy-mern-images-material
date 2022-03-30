@@ -199,13 +199,13 @@ David Castillo - [@davidcastillog](https://twitter.com/davidcastillog)
 
 # MERN Chat App
 
-https://github.com/coding-to-music/mern-images-material
+https://github.com/coding-to-music/travelfy-mern-images-material
 
-https://mern-images-material.herokuapp.com/
+https://travelfy-mern-images-material.herokuapp.com/
 
 By jordanwhunter https://github.com/jordanwhunter
 
-https://github.com/jordanwhunter/mern-images-material
+https://github.com/jordanwhunter/travelfy-mern-images-material
 
 ## Installation:
 
@@ -217,20 +217,27 @@ https://github.com/jordanwhunter/mern-images-material
  git remote remove origin
  git commit -m "first commit"
  git branch -M main
- git remote add origin git@github.com:coding-to-music/mern-images-material.git
+ git remote add origin git@github.com:coding-to-music/travelfy-mern-images-material.git
  git push -u origin main
+```
+
+## Need to set CORS
+
+```
+    cors({
+      origin: ["https://travelfy.netlify.app", "http://localhost:3000", "*" ]
 ```
 
 ### Heroku
 
 ```java
-heroku create my-mern-images-material
+heroku create travelfy-mern-images-material
 ```
 
 ### Heroku MongoDB Environment Variables
 
 ```java
-heroku config:set MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/mern-images-material?retryWrites=true&w=majority"
+heroku config:set MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/travelfy-mern-images-material?retryWrites=true&w=majority"
 git push heroku
 ```
 
@@ -261,7 +268,7 @@ heroku buildpacks:add mars/create-react-app
 Output:
 
 ```java
-Buildpack added. Next release on my-mern-images-material will use:
+Buildpack added. Next release on travelfy-mern-images-material will use:
   1. heroku/nodejs
   2. mars/create-react-app
 Run git push heroku main to create a new release using these buildpacks.
@@ -282,7 +289,7 @@ heroku buildpacks
 Output:
 
 ```java
-=== my-mern-images-material Buildpack URLs
+=== travelfy-mern-images-material Buildpack URLs
 1. mars/create-react-app
 2. heroku/nodejs
 ```

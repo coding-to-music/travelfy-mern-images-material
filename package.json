@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "deploy": "git add . && git commit -m Heroku && git push && git push heroku"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
@@ -22,5 +23,11 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "create-react-app",
+    "react"
+  ]
 }

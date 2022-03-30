@@ -9,7 +9,7 @@ exports.createJWT = (user) => {
         userId: user._id,
         email: user.email,
       },
-      process.env.SECRET,
+      process.env.JWT_SECRET,
       { expiresIn: "24h" }
     )
     .split(".");
