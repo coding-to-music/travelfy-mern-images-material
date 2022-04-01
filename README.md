@@ -624,7 +624,6 @@ heroku run npx browserslist@latest --update-db
 
 heroku run npm i tree && tree -d -L 2
 
-removed .git from client directory
 ```
 
 ## Local Development
