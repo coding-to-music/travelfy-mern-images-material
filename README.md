@@ -619,6 +619,9 @@ Attempted this:
 ```java
 heroku config:set JS_RUNTIME_TARGET_BUNDLE=./client/build/static/js/*.js
 
+Try this:
+heroku config:set JS_RUNTIME_TARGET_BUNDLE=/client/build/static/js/*.js
+
 heroku run npx browserslist@latest --update-db
 
 heroku run npm i tree && tree -d -L 2
