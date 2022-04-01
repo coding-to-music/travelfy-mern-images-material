@@ -617,6 +617,8 @@ git push heroku
 Attempted this:
 
 ```java
+# again:
+
 heroku config:set JS_RUNTIME_TARGET_BUNDLE=./react-ui/build/static/js/*.js
 
 or
