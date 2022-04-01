@@ -49,7 +49,7 @@ module.exports = (app) => {
     cors({
       credentials: true,
       origin: [
-        "https://travelfy-mern-images-material.herokuapp.com",
+        "https://travelfy-mern-images-material.herokuapp.com.app",
         "http://localhost:3000",
         "*",
       ],
