@@ -614,19 +614,11 @@ git push heroku
 2022-03-29T08:06:59.938326+00:00 app[web.1]: Error injecting runtime env: bundle not found '/client/build/static/js/*.js'. See: https://github.com/mars/create-react-app-buildpack/blob/master/README.md#user-content-custom-bundle-location
 ```
 
-Attempted this:
+Use this to fix:
 
 ```java
-# again:
 
 heroku config:set JS_RUNTIME_TARGET_BUNDLE=./react-ui/build/static/js/*.js
-
-or
-
-heroku config:set JS_RUNTIME_TARGET_BUNDLE=./client/build/static/js/*.js
-
-did not work Try this:
-heroku config:set JS_RUNTIME_TARGET_BUNDLE=/client/build/static/js/*.js
 
 heroku run npx browserslist@latest --update-db
 
