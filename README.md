@@ -263,6 +263,8 @@ heroku buildpacks:clear
 ```java
 heroku buildpacks:set heroku/nodejs
 
+# may not need to do this
+
 heroku buildpacks:add mars/create-react-app
 
 ```
