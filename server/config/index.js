@@ -1,3 +1,6 @@
+import path from "path";
+import express from "express";
+
 // We reuse this import in order to have access to the `body` property in requests
 const express = require("express");
 
