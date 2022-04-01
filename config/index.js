@@ -19,11 +19,17 @@ module.exports = (app) => {
   // Services like heroku use something called a proxy and you need to add this to your server
   app.set("trust proxy", 1);
 
+  // origin: ["https://travelfy.netlify.app", "http://localhost:3000", "*" ]
+
   // controls a very specific header to pass headers from the frontend
   app.use(
     cors({
       credentials: true,
-      origin: ["https://travelfy.netlify.app", "http://localhost:3000", "*" ]
+      origin: [
+        "https://travelfy-mern-images-material.herokuapp.com",
+        "http://localhost:3000",
+        "*",
+      ],
     })
   );
 
