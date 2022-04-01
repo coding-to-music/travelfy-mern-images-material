@@ -17,7 +17,7 @@
     "build:client": "cd react-ui && npm run build",
     "install:server": "npm install --production=false",
     "install:server:client": "concurrently \"npm install --production=false\" \"npm install:client\"  \"npm install:server\"",
-    "start:client": "cd react-ui && npm run start",
+    "start:client": "cd react-ui && npm install && npm run start",
     "start:server": "npm run start",
     "start:all": "concurrently \"npm run start:client\" \"npm run start:server\""
   },
