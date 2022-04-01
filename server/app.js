@@ -16,6 +16,20 @@ const app = express();
 // ℹ️ This function is getting exported from the config folder. It runs most pieces of middleware
 require("./config")(app);
 
+// Priority serve any static files.
+app.use(express.static(path.resolve(__dirname, "../react-ui/build")));
+
+// // Answer API requests.
+// app.get("/api", function (req, res) {
+//   res.set("Content-Type", "application/json");
+//   res.send('{"message":"Hello from the custom server!"}');
+// });
+
+// All remaining requests return the React app, so it can handle routing.
+app.get("*", function (request, response) {
+  response.sendFile(path.resolve(__dirname, "../react-ui/build", "index.html"));
+});
+
 // 👇 Start handling routes here
 // Contrary to the views version, all routes are controlled from the routes/index.js
 const allRoutes = require("./routes/index.routes");
