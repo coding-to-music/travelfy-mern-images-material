@@ -1,4 +1,4 @@
-#
+# travelfy-mern-images-material
 
 <div id="top"></div>
 
@@ -13,6 +13,20 @@
     <br />
    <a href="https://travelfy.netlify.app/">View Demo</a>
 </div>
+
+# travelfy-mern-images-material
+
+https://github.com/coding-to-music/travelfy-mern-images-material
+
+https://travelfy-mern-images-material.herokuapp.com/
+
+By David Castillo davidcastillog https://github.com/davidcastillog
+
+https://travelfy.netlify.app/
+
+https://github.com/davidcastillog/travelfy-server
+
+https://github.com/davidcastillog/travelfy-client
 
 <!-- TABLE OF CONTENTS -->
   <summary>Table of Contents</summary>
@@ -199,16 +213,6 @@ David Castillo - [@davidcastillog](https://twitter.com/davidcastillog)
 [product-screenshot3]: https://github.com/davidcastillog/travelfy-client/blob/master/src/assets/images/mytrips.jpg
 [product-screenshot4]: https://github.com/davidcastillog/travelfy-client/blob/master/src/assets/images/weather.jpg
 
-# MERN Chat App
-
-https://github.com/coding-to-music/travelfy-mern-images-material
-
-https://travelfy-mern-images-material.herokuapp.com/
-
-By jordanwhunter https://github.com/jordanwhunter
-
-https://github.com/jordanwhunter/travelfy-mern-images-material
-
 ## Installation:
 
 ### GitHub
@@ -263,7 +267,8 @@ heroku buildpacks:clear
 ```java
 heroku buildpacks:set heroku/nodejs
 
-# may not need to do this
+# Do not need a Procfile
+# DO NOT NEED second buildpack
 
 heroku buildpacks:add mars/create-react-app
 
