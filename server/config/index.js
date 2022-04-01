@@ -13,6 +13,27 @@ const cookieParser = require("cookie-parser");
 // unless the request if from the same domain, by default express wont accept POST requests
 const cors = require("cors");
 
+// dotenv config
+require("dotenv").config();
+
+// app and port config
+const app = express();
+const port = process.env.PORT || 4000;
+
+// Priority serve any static files.
+app.use(express.static(path.resolve(__dirname, "../client/build")));
+
+// Answer API requests.
+app.get("/api", function (req, res) {
+  res.set("Content-Type", "application/json");
+  res.send('{"message":"Hello from the custom server!"}');
+});
+
+// All remaining requests return the React app, so it can handle routing.
+app.get("*", function (request, response) {
+  response.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
+});
+
 // Middleware configuration
 module.exports = (app) => {
   // Because this is a server that will accept requests from outside and it will be hosted ona server with a `proxy`, express needs to know that it should trust that setting.
