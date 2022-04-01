@@ -398,16 +398,6 @@ npm install
 npm start
 ```
 
-## Disclaimer
-
-Use at your own risk; not a supported MongoDB product
-
-## MERN stack example from MongoDB Developer Tutorial
-
-The note taking functionality does not work.
-
-Search for text and the GitHub API returns data that are displayed using cards.
-
 ## travelfy-mern-images-material
 
 https://github.com/coding-to-music/travelfy-mern-images-material
