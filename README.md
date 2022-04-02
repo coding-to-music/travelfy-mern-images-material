@@ -551,6 +551,22 @@ ATLAS_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/travelfy
 
 ```java
 heroku config:set ATLAS_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/travelfy-mern-images-material?retryWrites=true&w=majority"
+```
+
+Set all the environment variables on Heroku
+
+```java
+heroku config:set MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/travelfy-mern-images-material?retryWrites=true&w=majority"
+heroku config:set REACT_APP_GOOGLE_MAP_API_KEY=""
+heroku config:set REACT_MAP_GOOGLE_MAP_ID=""
+heroku config:set REACT_APP_GEO_API=""
+heroku config:set REACT_APP_RAPID_API=""
+heroku config:set REACT_APP_OPEN_WEATHER_API=""
+heroku config:set CLOUDINARY_CLOUD_NAME=""
+heroku config:set CLOUDINARY_API_KEY=""
+heroku config:set CLOUDINARY_API_SECRET=""
+heroku config:set JWT_SECRET=""
+
 git push heroku
 ```
 

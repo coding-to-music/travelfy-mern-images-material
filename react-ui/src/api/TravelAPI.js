@@ -4,6 +4,8 @@ export const apiTravel = axios.create({
   baseURL: "https://travel-advisor.p.rapidapi.com",
 });
 
+// process.env.REACT_APP_RAPID_API;
+
 apiTravel.defaults.headers.common["x-rapidapi-key"] =
   process.env.REACT_APP_RAPID_API;
 apiTravel.defaults.headers.common["x-rapidapi-host"] =
