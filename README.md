@@ -141,6 +141,90 @@ _Follow this simple steps:_
 
 <p align="right"><a href="#top">back to top ^</a></p>
 
+## Activating the Google Maps API:
+
+Getting this error:
+
+```java
+ApiNotActivatedMapError
+```
+
+https://developers.google.com/maps/get-started#enable-api-sdk
+
+```java
+gcloud services enable \
+    --project "PROJECT" \
+    "directions-backend.googleapis.com" \
+    "distance-matrix-backend.googleapis.com" \
+    "elevation-backend.googleapis.com" \
+    "geocoding-backend.googleapis.com" \
+    "geolocation.googleapis.com" \
+    "maps-android-backend.googleapis.com" \
+    "maps-backend.googleapis.com" \
+    "maps-embed-backend.googleapis.com" \
+    "maps-ios-backend.googleapis.com" \
+    "places-backend.googleapis.com" \
+    "roads.googleapis.com" \
+    "static-maps-backend.googleapis.com" \
+    "street-view-image-backend.googleapis.com" \
+    "timezone-backend.googleapis.com"
+```
+
+## Installing the gcloud CL
+
+https://cloud.google.com/sdk/docs/install
+
+```java
+gcloud init --console-only
+
+gcloud init
+
+gcloud config set project travelfy
+
+gcloud auth login
+
+gcloud auth application-default login
+
+gcloud services list
+
+gcloud services enable mapsengine.googleapis.com
+
+gcloud services enable \
+    --project "PROJECT" \
+    "directions-backend.googleapis.com" \
+    "distance-matrix-backend.googleapis.com" \
+    "elevation-backend.googleapis.com" \
+    "geocoding-backend.googleapis.com" \
+    "geolocation.googleapis.com" \
+    "maps-android-backend.googleapis.com" \
+    "maps-backend.googleapis.com" \
+    "maps-embed-backend.googleapis.com" \
+    "maps-ios-backend.googleapis.com" \
+    "places-backend.googleapis.com" \
+    "roads.googleapis.com" \
+    "static-maps-backend.googleapis.com" \
+    "street-view-image-backend.googleapis.com" \
+    "timezone-backend.googleapis.com"
+
+gcloud services enable \
+    --project "travelfy" \
+    "directions-backend.googleapis.com" \
+    "distance-matrix-backend.googleapis.com" \
+    "elevation-backend.googleapis.com" \
+    "geocoding-backend.googleapis.com" \
+    "geolocation.googleapis.com" \
+    "maps-android-backend.googleapis.com" \
+    "maps-backend.googleapis.com" \
+    "maps-embed-backend.googleapis.com" \
+    "maps-ios-backend.googleapis.com" \
+    "places-backend.googleapis.com" \
+    "roads.googleapis.com" \
+    "static-maps-backend.googleapis.com" \
+    "street-view-image-backend.googleapis.com" \
+    "timezone-backend.googleapis.com"
+
+```
+
 <!-- SCRIPTS -->
 
 ## Scripts
