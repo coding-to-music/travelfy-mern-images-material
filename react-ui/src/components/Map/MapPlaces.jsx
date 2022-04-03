@@ -7,6 +7,11 @@ console.log(
   process.env.REACT_APP_GOOGLE_MAP_API_KEY
 );
 
+console.log(
+  "node_env",
+  process.env.node_env
+);
+
 const MapPlaces = ({
   places,
   coordinates,
