@@ -2,20 +2,16 @@ import "./Map.css";
 import GoogleMapReact from "google-map-react";
 import PlaceMarker from "../PlaceMarker";
 
-console.log(
-  "NODE_ENV",
-  process.env.NODE_ENV
-);
+console.log("NODE_ENV", process.env.NODE_ENV);
 
-console.log(
-  "REACT_APP_GOOGLE_MAP_ID",
-  process.env.REACT_APP_GOOGLE_MAP_ID
-);
+console.log("REACT_APP_GOOGLE_MAP_ID", process.env.REACT_APP_GOOGLE_MAP_ID);
 
 console.log(
   "REACT_APP_GOOGLE_MAP_API_KEY",
   process.env.REACT_APP_GOOGLE_MAP_API_KEY
 );
+
+console.log("REACT_APP_ENVIRONMENT", process.env.REACT_APP_ENVIRONMENT);
 
 const Map = ({ places, coordinates, setCoordinates, setLimits, zoom }) => {
   return (
