@@ -20,6 +20,18 @@ https://github.com/coding-to-music/travelfy-mern-images-material
 
 https://travelfy-mern-images-material.herokuapp.com/
 
+```java
+heroku create --remote staging
+Creating app... done, ⬢ guarded-dusk-08830
+https://guarded-dusk-08830.herokuapp.com/ 
+```
+
+```java
+heroku create --remote test
+Creating app... done, ⬢ still-sands-27981
+https://still-sands-27981.herokuapp.com/ 
+```
+
 By David Castillo davidcastillog https://github.com/davidcastillog
 
 https://travelfy.netlify.app/
@@ -322,6 +334,18 @@ David Castillo - [@davidcastillog](https://twitter.com/davidcastillog)
 
 ```java
 heroku create travelfy-mern-images-material
+```
+
+```java
+heroku create --remote staging
+Creating app... done, ⬢ guarded-dusk-08830
+https://guarded-dusk-08830.herokuapp.com/ | https://git.heroku.com/guarded-dusk-08830.git
+```
+
+```java
+heroku create --remote test
+Creating app... done, ⬢ still-sands-27981
+https://still-sands-27981.herokuapp.com/ | https://git.heroku.com/still-sands-27981.git
 ```
 
 ### Heroku MongoDB Environment Variables
