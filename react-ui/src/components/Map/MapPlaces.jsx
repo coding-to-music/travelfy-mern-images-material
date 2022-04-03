@@ -2,16 +2,6 @@ import "./Map.css";
 import GoogleMapReact from "google-map-react";
 import PlaceMarker from "../PlaceMarker";
 
-console.log(
-  "NODE_ENV",
-  process.env.NODE_ENV
-);
-
-console.log(
-  "node_env",
-  process.env.node_env
-);
-
 const MapPlaces = ({
   places,
   coordinates,
