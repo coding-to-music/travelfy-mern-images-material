@@ -608,6 +608,8 @@ main scripts
     "build": "cd client/ && npm install && npm run build",
     "watch": "nodemon server",
     "deploy": "git add . && git commit -m Heroku && git push && git push heroku",
+    "deploy:staging": "git push staging main",
+    "deploy:test": "git push test main",
     "install:client": "cd client && npm install --production=false",
     "build:client": "cd client && npm run build",
     "install:server": "npm install --production=false",
@@ -625,6 +627,28 @@ main scripts
     "client/node_modules"
   ]
 }
+```
+
+## scripts for staging and test
+
+```java
+    "deploy:staging": "git push staging main",
+    "deploy:test": "git push test main",
+```
+
+## Testing
+
+```java
+npm run deploy:test
+
+heroku logs --tail --remote test
+```
+
+
+```java
+npm run deploy:test
+
+heroku logs --tail --remote staging
 ```
 
 ### GitHub
@@ -666,7 +690,7 @@ Set all the environment variables on Heroku
 ```java
 heroku config:set MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/travelfy-mern-images-material?retryWrites=true&w=majority"
 heroku config:set REACT_APP_GOOGLE_MAP_API_KEY=""
-heroku config:set REACT_MAP_GOOGLE_MAP_ID=""
+heroku config:set REACT_APP_GOOGLE_MAP_ID=""
 heroku config:set REACT_APP_GEO_API=""
 heroku config:set REACT_APP_RAPID_API=""
 heroku config:set REACT_APP_OPEN_WEATHER_API=""

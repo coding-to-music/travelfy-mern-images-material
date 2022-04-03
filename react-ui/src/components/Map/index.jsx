@@ -8,8 +8,8 @@ console.log(
 );
 
 console.log(
-  "REACT_MAP_GOOGLE_MAP_ID",
-  process.env.REACT_MAP_GOOGLE_MAP_ID
+  "REACT_APP_GOOGLE_MAP_ID",
+  process.env.REACT_APP_GOOGLE_MAP_ID
 );
 
 console.log(
@@ -27,7 +27,7 @@ const Map = ({ places, coordinates, setCoordinates, setLimits, zoom }) => {
             libraries: ["places", "geometry", "drawing"],
           }}
           // Map Style (Google Developers Platform)
-          mapId={process.env.REACT_MAP_GOOGLE_MAP_ID}
+          mapId={process.env.REACT_APP_GOOGLE_MAP_ID}
           center={coordinates}
           defaultZoom={zoom}
           options={{ disableDefaultUI: true, zoomControl: true }}

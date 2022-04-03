@@ -24,8 +24,8 @@ console.log(
 );
 
 console.log(
-  "REACT_MAP_GOOGLE_MAP_ID",
-  process.env.REACT_MAP_GOOGLE_MAP_ID
+  "REACT_APP_GOOGLE_MAP_ID",
+  process.env.REACT_APP_GOOGLE_MAP_ID
 );
 
 console.log(

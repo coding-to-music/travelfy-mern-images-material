@@ -18,7 +18,7 @@ const MapPlaces = ({
             libraries: ["places", "geometry", "drawing"],
           }}
           // Map Style (Google Developers Platform)
-          mapId={process.env.REACT_MAP_GOOGLE_MAP_ID}
+          mapId={process.env.REACT_APP_GOOGLE_MAP_ID}
           center={coordinates}
           defaultZoom={zoom}
           options={{ disableDefaultUI: true, zoomControl: true }}
