@@ -3,8 +3,8 @@ import GoogleMapReact from "google-map-react";
 import PlaceMarker from "../PlaceMarker";
 
 console.log(
-  "REACT_APP_GOOGLE_MAP_API_KEY",
-  process.env.REACT_APP_GOOGLE_MAP_API_KEY
+  "NODE_ENV",
+  process.env.NODE_ENV
 );
 
 console.log(
