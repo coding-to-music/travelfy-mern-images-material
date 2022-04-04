@@ -21,15 +21,14 @@ https://github.com/coding-to-music/travelfy-mern-images-material
 https://travelfy-mern-images-material.herokuapp.com/
 
 ```java
-heroku create --remote staging
-Creating app... done, ⬢ guarded-dusk-08830
-https://guarded-dusk-08830.herokuapp.com/
-```
-
-```java
-heroku create --remote test
-Creating app... done, ⬢ still-sands-27981
-https://still-sands-27981.herokuapp.com/
+cors({
+  credentials: true,
+  origin: [
+    "https://travelfy-mern-images-material.herokuapp.com",  # Heroku Production
+    "https://still-sands-27981.herokuapp.com",              # test
+    "https://guarded-dusk-08830.herokuapp.com",             # staging
+    "https://radiant-gorge-70504.herokuapp.com",            # development
+    "http://localhost:3000",
 ```
 
 By David Castillo davidcastillog https://github.com/davidcastillog
@@ -171,6 +170,7 @@ _Follow this simple steps:_
 **Client**:
 
 - [Google Maps](https://developers.google.com/maps)
+- [Google Maps Console](https://console.cloud.google.com/google/maps-apis/overview)
 - [Open Weather](https://openweathermap.org/api)
 - [Rapid API Travel](https://rapidapi.com/apidojo/api/travel-advisor)
 - [FreeGeoIp](https://freegeoip.app/)
@@ -369,6 +369,17 @@ David Castillo - [@davidcastillog](https://twitter.com/davidcastillog)
     })
   );
 ```
+
+### Heroku Login
+
+## Just adding some detailed steps to resolve the issue
+
+- Navigate to https://dashboard.heroku.com/account/applications
+- In Authorizations click on create authorization button
+- Add description in pop up eg.heroku cli and leave expire after blank if you dont want it to expire
+- You will get authorization token
+- in cli run heroku login -i
+- when it prompts for password enter the authoriation token
 
 ### Heroku
 
