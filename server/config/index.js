@@ -63,6 +63,7 @@ module.exports = (app) => {
         "https://travelfy-mern-images-material.herokuapp.com",
         "https://still-sands-27981.herokuapp.com",
         "https://guarded-dusk-08830.herokuapp.com",
+        "https://radiant-gorge-70504.herokuapp.com/explore",
         "http://localhost:3000",
         "*",
       ],

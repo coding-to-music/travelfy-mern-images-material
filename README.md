@@ -323,11 +323,23 @@ David Castillo - [@davidcastillog](https://twitter.com/davidcastillog)
  git push -u origin main
 ```
 
-## Need to set CORS
+## Need to set CORS in server/config/index.js
 
 ```
+  // controls a very specific header to pass headers from the frontend
+  app.use(
     cors({
-      origin: ["https://travelfy.netlify.app", "http://localhost:3000", "*" ]
+      credentials: true,
+      origin: [
+        "https://travelfy-mern-images-material.herokuapp.com",  # Heroku Production
+        "https://still-sands-27981.herokuapp.com",              # test
+        "https://guarded-dusk-08830.herokuapp.com",             # staging
+        "https://radiant-gorge-70504.herokuapp.com/explore",    # development
+        "http://localhost:3000",
+        "*",
+      ],
+    })
+  );
 ```
 
 ### Heroku
