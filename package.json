@@ -16,6 +16,7 @@
     "deploy": "git add . && git commit -m Heroku && git push && git push heroku && heroku logs --tail --remote heroku",
     "deploy:staging": "git push staging main && heroku logs --tail --remote staging",
     "deploy:test": "git push test main && heroku logs --tail --remote test",
+    "deploy:development": "git push development main && heroku logs --tail --remote development",
     "install:client": "cd react-ui && npm install",
     "oldinstall:client": "cd react-ui && npm install --production=false",
     "build:client": "cd react-ui && npm run build",

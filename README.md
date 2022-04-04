@@ -23,13 +23,13 @@ https://travelfy-mern-images-material.herokuapp.com/
 ```java
 heroku create --remote staging
 Creating app... done, ⬢ guarded-dusk-08830
-https://guarded-dusk-08830.herokuapp.com/ 
+https://guarded-dusk-08830.herokuapp.com/
 ```
 
 ```java
 heroku create --remote test
 Creating app... done, ⬢ still-sands-27981
-https://still-sands-27981.herokuapp.com/ 
+https://still-sands-27981.herokuapp.com/
 ```
 
 By David Castillo davidcastillog https://github.com/davidcastillog
@@ -337,6 +337,12 @@ heroku create travelfy-mern-images-material
 ```
 
 ```java
+heroku create --remote development
+Creating app... done, ⬢ radiant-gorge-70504
+https://radiant-gorge-70504.herokuapp.com/ | https://git.heroku.com/radiant-gorge-70504.git
+```
+
+```java
 heroku create --remote staging
 Creating app... done, ⬢ guarded-dusk-08830
 https://guarded-dusk-08830.herokuapp.com/ | https://git.heroku.com/guarded-dusk-08830.git
@@ -610,6 +616,7 @@ main scripts
     "deploy": "git add . && git commit -m Heroku && git push && git push heroku",
     "deploy:staging": "git push staging main",
     "deploy:test": "git push test main",
+    "deploy:development": "git push development main && heroku logs --tail --remote development",
     "install:client": "cd client && npm install --production=false",
     "build:client": "cd client && npm run build",
     "install:server": "npm install --production=false",
@@ -644,11 +651,62 @@ npm run deploy:test
 heroku logs --tail --remote test
 ```
 
-
 ```java
 npm run deploy:test
 
 heroku logs --tail --remote staging
+```
+
+## Specify the app you want with --app or --remote.
+
+# Heroku remotes in repo:
+
+```java
+travelfy-mern-images-material (heroku)
+guarded-dusk-08830 (staging)
+still-sands-27981 (test)
+```
+
+## PRODUCTION
+
+```java
+# TavelfyMap d03edd9f427f5ad3
+REACT_APP_GOOGLE_MAP_ID="d03edd9f427f5ad3"
+heroku config:set REACT_APP_ENVIRONMENT="production" --remote heroku
+heroku config:set REACT_APP_GOOGLE_MAP_ID="d03edd9f427f5ad3" --remote heroku
+```
+
+## STAGING
+
+```java
+# Travelfy-Dark 9f322ca1bbdf28d7
+REACT_APP_GOOGLE_MAP_ID="9f322ca1bbdf28d7"
+heroku config:set REACT_APP_ENVIRONMENT="staging" --remote staging
+heroku config:set REACT_APP_GOOGLE_MAP_ID="9f322ca1bbdf28d7" --remote staging
+# https://dashboard.heroku.com/apps/guarded-dusk-08830
+# https://guarded-dusk-08830.herokuapp.com/
+```
+
+## TEST
+
+```java
+# Travelfy-Night d9cd8afb69406ef7
+REACT_APP_GOOGLE_MAP_ID="d9cd8afb69406ef7"
+heroku config:set REACT_APP_ENVIRONMENT="test" --remote test
+heroku config:set REACT_APP_GOOGLE_MAP_ID="d9cd8afb69406ef7" --remote test
+# https://dashboard.heroku.com/apps/still-sands-27981
+# https://still-sands-27981.herokuapp.com/
+```
+
+## DEVELOPMENT
+
+```java
+# Another-Dark 8f74bcd4b356ed24
+REACT_APP_GOOGLE_MAP_ID="8f74bcd4b356ed24"
+heroku config:set REACT_APP_ENVIRONMENT="development" --remote development
+heroku config:set REACT_APP_GOOGLE_MAP_ID="8f74bcd4b356ed24" --remote development
+# https://dashboard.heroku.com/apps/still-sands-27981
+# https://still-sands-27981.herokuapp.com/
 ```
 
 ### GitHub
