@@ -64,6 +64,34 @@ https://github.com/davidcastillog/travelfy-client
 
 <!-- ABOUT THE PROJECT -->
 
+## Tasks To Do
+
+- [&check; ] Enviroments for development, test, staging, production
+- [x] Display Enviroment in console
+- [✅] Checkmarks Working
+- [ ] User error in console
+- [ ] Display Build and Environment info in the UI
+- [ ] Get Login to work
+- [ ] Logging
+- [ ] Auth with GitHub and Google
+- [ ] Farenheit default
+- [ ] Detect user's location and use correct Farenheit vs Celsius
+- [ ] Dark mode
+- [ ] Dark maps
+- [ ] News API
+- [ ] Stocks API
+- [ ] Embedded Charts
+- [ ] Detect Dark vs Light preference
+- [ ] Display Location Info
+- [ ]
+
+More Checkmark Examples
+
+- [&check;] - html checkbox example
+- [:white_check_mark:] - emoji checkbox example
+- [&#9746;] - unicode checkbox example
+- [✅] - unicode checkbox example
+
 ## About The Project
 
 ![Travelfy Screenshot][product-screenshot]
