@@ -334,7 +334,7 @@ David Castillo - [@davidcastillog](https://twitter.com/davidcastillog)
         "https://travelfy-mern-images-material.herokuapp.com",  # Heroku Production
         "https://still-sands-27981.herokuapp.com",              # test
         "https://guarded-dusk-08830.herokuapp.com",             # staging
-        "https://radiant-gorge-70504.herokuapp.com/explore",    # development
+        "https://radiant-gorge-70504.herokuapp.com",            # development
         "http://localhost:3000",
         "*",
       ],
