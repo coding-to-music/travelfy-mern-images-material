@@ -45,6 +45,7 @@ This plugin will extract info from Heroku and put it into a Docker file.
 
 ```java
 heroku plugins:install @renderinc/heroku-import
+
 ```
 
 Output:
